@@ -2,14 +2,17 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main() 
+int main()
 {
-  char str[5];
+  char nome[10];
+  char resultado[5]; 
 
-  printf("Digite o seu nome: \n");
-  fgets(str, 5, stdin);
+  printf("Digite o seu nome: ");
+  scanf("%s", nome);
 
-  printf("As 4 primeiras letras do nome sao: %s\n", str);
-
-  return 0;
+  for (int i = 0; i < 4 && nome[i] != '\0'; i++) {
+    resultado[i] = nome[i];
+  }
+  resultado[4] = '\0';
+  printf("O resultado eh: %s\n", resultado);
 }
