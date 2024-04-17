@@ -16,10 +16,6 @@ int main()
   {
     compri++;
   }
-  if (str[compri - 1] != '\n')
-  {
-    str[compri - 1] != '\0';
-  }
   printf("O comprimento da string digitada eh: %d\n", compri);
 
   return 0;
